@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tinper-bee/tinper-bee-components.git"
+    "url": "git+https://github.com/iuap-design/tinper-bee-components.git"
   },
   "author": "lucian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tinper-bee/tinper-bee-components/issues"
+    "url": "https://github.com/iuap-design/tinper-bee-components/issues"
   },
-  "homepage": "https://github.com/tinper-bee/tinper-bee-components#readme",
+  "homepage": "https://github.com/iuap-design/tinper-bee-components#readme",
   "dependencies": {
     "ali-oss": "^6.1.0",
     "download": "7.1.0",
