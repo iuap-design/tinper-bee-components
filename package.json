@@ -1,0 +1,27 @@
+{
+  "name": "tinper-bee-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "getTag": "node server/getTag.js",
+    "createFile": "node server/createFile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinper-bee/tinper-bee-components.git"
+  },
+  "author": "lucian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinper-bee/tinper-bee-components/issues"
+  },
+  "homepage": "https://github.com/tinper-bee/tinper-bee-components#readme",
+  "dependencies": {
+    "ali-oss": "^6.1.0",
+    "download": "7.1.0",
+    "fs-extra": "7.0.1",
+    "git-tags-remote": "1.0.1",
+    "latest-version": "4.0.0"
+  }
+}
