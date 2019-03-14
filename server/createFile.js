@@ -2,13 +2,12 @@ const download = require('download');
 const fs = require('fs-extra');
 const latestVersion = require('latest-version');
 const OSS = require('ali-oss');
+const minify = require('minify');
+
 let components = require('../static/components/components.json');
 
 let ossconfig = {
-    accessKeyId: '',
-    accessKeySecret: '',
-    bucket: '',
-    region: '',
+    
 }
 
 let client = new OSS(ossconfig);
@@ -34,11 +33,22 @@ function putCDN(putUrl, filePath) {
 let writeDemo = (item, tag) => {
     let downFn = (downPath, filePath, fileName) => {
         fs.pathExists(filePath, (err, flag) => {
-            if (!flag) {
+            if (!flag) {//meiyouhttps://raw.githubusercontent.com/tinper-bee/${item}/${tag}/dist/demo.js
                 download(downPath).then(data => {
                         fs.writeFileSync(filePath, data);
                         console.log(`😀写入 ${filePath} 成功 `);
-                        putCDN(`static/tinper-bee/components/${item}/dist/${tag}/${fileName}`, filePath)
+                        minify(filePath).then((data)=>{
+                            console.log(`😀压缩 ${filePath} 成功 `);
+                            fs.writeFileSync(filePath, data);
+                            putCDN(`static/tinper-bee/components/${item}/dist/${tag}/${fileName}`, filePath)
+                        })
+                        .catch((err)=>{
+                            console.log(`❌压缩 ${filePath} 失败 `);
+                            console.log(err)
+                            //犹豫demo.css中有import，无法压缩，直接放到cdn
+                            putCDN(`static/tinper-bee/components/${item}/dist/${tag}/${fileName}`, filePath)
+                        });
+                        
                     })
                     .catch(() => {
                         fs.appendFile('./static/components/error.txt', `请求 ${filePath} 失败 \n`);
@@ -97,3 +107,6 @@ let createFile = () => {
 }
 
 createFile();
+
+
+  
