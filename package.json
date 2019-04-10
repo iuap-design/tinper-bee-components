@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "getTag": "node server/getTag.js",
-    "createFile": "node server/createFile.js"
+    "createFile": "node server/createFile.js",
+    "writeFile":"node server/getTag.js && node server/createFile.js"
   },
   "repository": {
     "type": "git",

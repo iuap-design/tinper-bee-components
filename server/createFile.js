@@ -7,7 +7,7 @@ const minify = require('minify');
 let components = require('../static/components/components.json');
 
 let ossconfig = {
-    
+   
 }
 
 let client = new OSS(ossconfig);
