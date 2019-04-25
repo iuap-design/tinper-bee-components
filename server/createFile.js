@@ -3,14 +3,12 @@ const fs = require('fs-extra');
 const latestVersion = require('latest-version');
 const OSS = require('ali-oss');
 const minify = require('minify');
+const ossConfig = require('./ossConfig.json');
 
 let components = require('../static/components.json');
 
-let ossconfig = {
-    
-}
 
-let client = new OSS(ossconfig);
+let client = new OSS(ossConfig);
 
 
 /**
