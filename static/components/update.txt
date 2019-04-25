@@ -1,0 +1,4 @@
+Thu Apr 25 2019 16:18:37 GMT+0800 (CST) 
+static/tinper-bee/components/bee-tree/dist/v2.0.10/demo.js 
+static/tinper-bee/components/bee-table/dist/v2.0.14/demo.js 
+static/tinper-bee/components/bee-table/dist/v2.0.15/demo.js 
