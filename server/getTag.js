@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 const gitTagsRemote = require('git-tags-remote');
-let componentsSource = require('../static/components/componentsSource.json');
+let componentsSource = require('../static/componentsSource.json');
 /**
  * 1、获得所有tag，并改变 components.json
  * @param {*} item 组件名称
@@ -20,7 +20,7 @@ let getAlltag = () => {
             })
             .then(() => {
                 components = componentsSource;
-                fs.writeJson('./static/components/components.json', componentsSource)
+                fs.writeJson('./static/components.json', componentsSource)
                     .then(() => {
                         console.log('😀json文件写入成功!')
                     })
@@ -34,8 +34,8 @@ let getAlltag = () => {
                 console.log(error)
             })
     });
-    fs.writeFileSync('./static/components/error.txt', '');
-    fs.appendFileSync('./static/components/update.txt',new Date()+' \n','utf8')
+    fs.writeFileSync('./static/error.txt', '');
+    fs.appendFileSync('./static/update.txt',new Date()+' \n','utf8')
 }
 
 getAlltag();

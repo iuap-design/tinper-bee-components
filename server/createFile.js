@@ -4,7 +4,7 @@ const latestVersion = require('latest-version');
 const OSS = require('ali-oss');
 const minify = require('minify');
 
-let components = require('../static/components/components.json');
+let components = require('../static/components.json');
 
 let ossconfig = {
     
@@ -19,7 +19,7 @@ let client = new OSS(ossconfig);
  */
 function putCDN(putUrl, filePath) {
     client.put(putUrl, filePath).then(data => {
-        fs.appendFileSync('./static/components/update.txt',`${putUrl} \n`,'utf8')
+        fs.appendFileSync('./static/update.txt',`${putUrl} \n`,'utf8')
         console.log(`😀${filePath} 上传成功`)
     }).catch(function (err) {
         console.error(`❌ ${filePath} 上传失败`, err);
@@ -57,12 +57,12 @@ let writeDemo = (item, tag) => {
                 
             })
             .catch(() => {
-                fs.appendFile('./static/components/error.txt', `请求 ${filePath} 失败 \n`);
+                fs.appendFile('./static/error.txt', `请求 ${filePath} 失败 \n`);
                 if(fileName=='demo.js'){//删除没有dist/demo.js 文件的tag
                     let versions = components[item].versions;
                     versions.splice(versions.indexOf(tag), 1);
                     components[item].versions = versions;
-                    fs.writeJson('./static/components/components.json', components)
+                    fs.writeJson('./static/components.json', components)
                         .then(() => {
                             console.log(`😀json文件写入成功! 删除了 ${item}--${tag}`);
                         })
@@ -96,12 +96,12 @@ let writeDemo = (item, tag) => {
                         
         //             })
         //             .catch(() => {
-        //                 fs.appendFile('./static/components/error.txt', `请求 ${filePath} 失败 \n`);
+        //                 fs.appendFile('./static/error.txt', `请求 ${filePath} 失败 \n`);
         //                 if(fileName=='demo.js'){//删除没有dist/demo.js 文件的tag
         //                     let versions = components[item].versions;
         //                     versions.splice(versions.indexOf(tag), 1);
         //                     components[item].versions = versions;
-        //                     fs.writeJson('./static/components/components.json', components)
+        //                     fs.writeJson('./static/components.json', components)
         //                         .then(() => {
         //                             console.log(`😀json文件写入成功! 删除了 ${item}--${tag}`);
         //                         })
