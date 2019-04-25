@@ -35,6 +35,7 @@ let getAlltag = () => {
             })
     });
     fs.writeFileSync('./static/components/error.txt', '');
+    fs.appendFileSync('./static/components/update.txt',new Date()+' \n','utf8')
 }
 
 getAlltag();

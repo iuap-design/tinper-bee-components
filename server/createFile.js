@@ -7,7 +7,7 @@ const minify = require('minify');
 let components = require('../static/components/components.json');
 
 let ossconfig = {
-   
+    
 }
 
 let client = new OSS(ossconfig);
@@ -19,6 +19,7 @@ let client = new OSS(ossconfig);
  */
 function putCDN(putUrl, filePath) {
     client.put(putUrl, filePath).then(data => {
+        fs.appendFileSync('./static/components/update.txt',`${putUrl} \n`,'utf8')
         console.log(`😀${filePath} 上传成功`)
     }).catch(function (err) {
         console.error(`❌ ${filePath} 上传失败`, err);
