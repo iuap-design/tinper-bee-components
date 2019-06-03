@@ -193,3 +193,10 @@ static/tinper-bee/components/bee-datepicker/dist/v2.0.40/demo.js
 static/tinper-bee/components/bee-select/dist/v2.0.13/demo.js 
 static/tinper-bee/components/bee-modal/dist/v2.0.14/demo.js 
 static/tinper-bee/components/bee-table/dist/v2.1.0/demo.js 
+Mon Jun 03 2019 21:14:17 GMT+0800 (CST) 
+static/tinper-bee/components/bee-drawer/dist/v0.0.3/demo.css 
+static/tinper-bee/components/bee-drawer/dist/v0.0.4/demo.css 
+static/tinper-bee/components/bee-page-layout/dist/v1.0.0/demo.css 
+static/tinper-bee/components/bee-drawer/dist/v0.0.3/demo.js 
+static/tinper-bee/components/bee-page-layout/dist/v1.0.0/demo.js 
+static/tinper-bee/components/bee-drawer/dist/v0.0.4/demo.js 
