@@ -163,3 +163,33 @@ static/tinper-bee/components/bee-table/dist/v2.0.21/demo.js
 static/tinper-bee/components/bee-table/dist/v2.0.20/demo.js 
 static/tinper-bee/components/bee-table/dist/v2.0.22/demo.js 
 static/tinper-bee/components/bee-table/dist/v2.0.24/demo.js 
+Sat May 25 2019 10:27:22 GMT+0800 (CST) 
+Sat Jun 01 2019 23:44:24 GMT+0800 (CST) 
+static/tinper-bee/components/bee-timepicker/dist/v2.0.4/demo.css 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.41/demo.css 
+static/tinper-bee/components/bee-colorpicker/dist/v0.0.10/demo.css 
+static/tinper-bee/components/bee-input-group/dist/v2.0.3/demo.css 
+static/tinper-bee/components/bee-select/dist/v2.0.13/demo.css 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.40/demo.css 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.38/demo.css 
+static/tinper-bee/components/bee-radio/dist/v2.0.10/demo.css 
+static/tinper-bee/components/bee-tree-select/dist/v0.0.4/demo.css 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.39/demo.css 
+static/tinper-bee/components/bee-loading/dist/v1.1.2/demo.css 
+static/tinper-bee/components/bee-loading/dist/v1.1.2/demo.js 
+static/tinper-bee/components/bee-tree-select/dist/v0.0.5/demo.css 
+static/tinper-bee/components/bee-radio/dist/v2.0.10/demo.js 
+static/tinper-bee/components/bee-modal/dist/v2.0.14/demo.css 
+static/tinper-bee/components/bee-table/dist/v2.1.0/demo.css 
+static/tinper-bee/components/bee-tree-select/dist/v0.0.4/demo.js 
+static/tinper-bee/components/bee-timepicker/dist/v2.0.4/demo.js 
+static/tinper-bee/components/bee-input-group/dist/v2.0.3/demo.js 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.41/demo.js 
+static/tinper-bee/components/bee-colorpicker/dist/v0.0.10/demo.js 
+static/tinper-bee/components/bee-tree-select/dist/v0.0.5/demo.js 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.39/demo.js 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.38/demo.js 
+static/tinper-bee/components/bee-datepicker/dist/v2.0.40/demo.js 
+static/tinper-bee/components/bee-select/dist/v2.0.13/demo.js 
+static/tinper-bee/components/bee-modal/dist/v2.0.14/demo.js 
+static/tinper-bee/components/bee-table/dist/v2.1.0/demo.js 

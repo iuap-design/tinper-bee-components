@@ -89,12 +89,6 @@
 
         ]
     },
-    "bee-complex-grid": {
-        "name": "复杂表格",
-        "versions": [
-
-        ]
-    },
     "bee-tree": {
         "name": "树形控件",
         "versions": [
@@ -354,6 +348,12 @@
         ]
     },
     "bee-tag":{
+        "name":"标签",
+        "version":[
+            
+        ]
+    },
+    "bee-tree-select":{
         "name":"标签",
         "version":[
             
