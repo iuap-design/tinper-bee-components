@@ -21,6 +21,7 @@ function putCDN(putUrl, filePath) {
         console.log(`😀${filePath} 上传成功`)
     }).catch(function (err) {
         console.error(`❌ ${filePath} 上传失败`, err);
+        fs.appendFile('./static/error.txt', `❌ ${filePath} 上传失败\n`);
     });
 }
 
