@@ -11,8 +11,20 @@
 
         ]
     },
+    "bee-svgicon": {
+        "name": "svg图标",
+        "versions": [
+
+        ]
+    },
     "bee-layout": {
         "name": "栅格布局",
+        "versions": [
+
+        ]
+    },
+    "bee-page-layout": {
+        "name": "页面布局",
         "versions": [
 
         ]
@@ -257,14 +269,14 @@
 
         ]
     },
-    "bee-cascader": {
-        "name": "级联菜单",
+    "bee-tree-select": {
+        "name": "树选择",
         "versions": [
 
         ]
     },
-    "bee-city-select": {
-        "name": "城市选择",
+    "bee-cascader": {
+        "name": "级联菜单",
         "versions": [
 
         ]
@@ -336,7 +348,7 @@
         ]
     },
     "bee-colorpicker":{
-        "name":"拾色器",
+        "name":"取色板",
         "version":[
             
         ]
@@ -354,13 +366,7 @@
         ]
     },
     "bee-tree-select":{
-        "name":"标签",
-        "version":[
-            
-        ]
-    },
-    "bee-page-layout":{
-        "name":"页面布局",
+        "name":"树选择",
         "version":[
             
         ]
